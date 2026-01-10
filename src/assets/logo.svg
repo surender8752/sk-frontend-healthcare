@@ -1,0 +1,63 @@
+<svg width="280" height="60" viewBox="0 0 280 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Gradient for icon -->
+    <linearGradient id="iconGradient3D" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B8AFF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5F6FFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B4CE0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow gradient -->
+    <linearGradient id="shadowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B4CE0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2A3AB0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d2b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#3B4CE0" flood-opacity="0.4"/>
+    </filter>
+    
+    <!-- Icon inner shadow -->
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="2"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- 3D Icon Base Shadow -->
+  <ellipse cx="28" cy="54" rx="20" ry="4" fill="#1a1a4e" opacity="0.2"/>
+  
+  <!-- 3D Icon Side (depth effect) -->
+  <path d="M5 30 L5 35 C5 48 18 55 28 55 C38 55 51 48 51 35 L51 30 C51 17 38 6 28 6 C18 6 5 17 5 30Z" fill="url(#shadowGradient)"/>
+  
+  <!-- Main Circle with 3D effect -->
+  <circle cx="28" cy="28" r="24" fill="url(#iconGradient3D)" filter="url(#dropShadow)"/>
+  
+  <!-- Highlight arc for 3D effect -->
+  <path d="M12 18 Q18 8 38 12" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Medical Cross with 3D -->
+  <rect x="24" y="12" width="8" height="32" rx="2" fill="white" opacity="0.95"/>
+  <rect x="12" y="24" width="32" height="8" rx="2" fill="white" opacity="0.95"/>
+  
+  <!-- Heart with 3D glow -->
+  <path d="M28 38 C22 32 16 26 16 21 C16 17 19 14 23 14 C25.5 14 27 15.5 28 17 C29 15.5 30.5 14 33 14 C37 14 40 17 40 21 C40 26 34 32 28 38Z" fill="#FF6B8A" filter="url(#dropShadow)"/>
+  <path d="M28 36 C23 31 18 26 18 22 C18 19 20 17 23 17 C24.5 17 26 18 27 19" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  
+  <!-- Sk~ Text with 3D effect -->
+  <text x="62" y="28" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="url(#textGradient)" filter="url(#dropShadow)">Sk~</text>
+  
+  <!-- HealthCare Text -->
+  <text x="62" y="48" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" fill="#5F6FFF" letter-spacing="2">HealthCare</text>
+  
+  <!-- 3D Text shadow -->
+  <text x="63" y="29" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="#3B4CE0" opacity="0.3">Sk~</text>
+</svg>
