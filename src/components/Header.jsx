@@ -14,7 +14,7 @@ const Header = () => {
           Book Appointment <br /> With Trusted Doctors
         </p>
         <div className='flex flex-col md:flex-row items-center gap-3 text-white text-sm font-light'>
-          <img className="w-full h-full object-cover" src={assets.group_profiles} alt="" />
+          <img className="w-full" src={assets.group_profiles} alt="" />
           <p>Browse our extensive list of trusted doctors, <br className='hidden sm:block' /> schedule your appointment with ease.</p>
         </div>
         <a onClick={() => navigate('/doctors')} href='#speciality' className='flex items-center gap-2 bg-white px-8 py-3 rounded-full text-gray-600 text-sm m-auto md:m-0 hover:scale-105 transition-all duration-300'>
@@ -24,7 +24,7 @@ const Header = () => {
 
       {/* -----Right Side----- */}
       <div className='md:w-1/2 relative'>
-        <img className='w-full md:absolute bottom-0 h-auto rounded-lg' src={assets.header_img} alt="" />
+        <img className='w-full h-full object-cover object-center md:absolute bottom-0 left-0 right-0' src={assets.header_img} alt="" />
       </div>
 
     </div>
