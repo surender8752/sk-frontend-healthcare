@@ -10,7 +10,7 @@ const Header = () => {
 
       <div className='flex flex-col md:flex-row'>
         {/* -----Left Side----- */}
-        <div className='md:w-1/2 flex flex-col items-start justify-center gap-4 py-10 px-6 md:px-10 lg:px-20 md:py-[10vw]'>
+        <div className='md:w-1/2 flex flex-col items-start justify-center gap-4 py-8 px-6 md:px-10 lg:px-20 md:py-[6vw]'>
           <p className='text-3xl md:text-4xl lg:text-5xl text-white font-semibold leading-tight md:leading-tight lg:leading-tight'>
             Book Appointment <br /> With Trusted Doctors
           </p>
@@ -24,7 +24,7 @@ const Header = () => {
         </div>
 
         {/* -----Right Side----- */}
-        <div className='md:w-1/2 relative min-h-[250px] md:min-h-[400px]'>
+        <div className='md:w-1/2 relative min-h-[200px] md:min-h-[300px]'>
           <img className='w-full h-full object-cover object-center' src={assets.header_img} alt="" />
         </div>
       </div>
