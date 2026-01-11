@@ -25,7 +25,7 @@ const Banner = () => {
       {/*-------Right Side ------*/}
       <div className='md:w-1/2 relative min-h-[250px] md:min-h-[350px]'>
         <img
-          className='w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500'
+          className='w-full h-full object-cover object-center animate-float-slow'
           src={assets.banner_img}
           alt="Doctor Appointment"
         />
