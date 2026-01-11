@@ -1,6 +1,6 @@
 import appointment_img from './appointment_img.png'
 import banner_doctors from './banner_doctors.png'
-import header_img from './header_img.jpg'
+import header_img from './header_img.png'
 import group_profiles from './group_profiles.png'
 import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.png'
@@ -39,6 +39,7 @@ import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
 import doctors_team from './doctors_team.jpg'
 import banner_team from './banner_team.jpg'
+import banner_img from './banner_img.png'
 
 
 export const assets = {
@@ -61,7 +62,8 @@ export const assets = {
     razorpay_logo,
     banner_doctors,
     doctors_team,
-    banner_team
+    banner_team,
+    banner_img
 }
 
 export const specialityData = [
