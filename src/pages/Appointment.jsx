@@ -125,7 +125,7 @@ const Appointment = () => {
       {/*------Doctors Team Banner-----*/}
       <div className='w-full mb-8'>
         <img
-          className='w-full h-auto max-h-[200px] sm:max-h-[280px] md:max-h-[350px] lg:max-h-[400px] object-cover rounded-xl shadow-lg'
+          className='w-full h-auto object-contain rounded-xl shadow-lg'
           src={assets.doctors_team}
           alt="Our Medical Team"
         />
