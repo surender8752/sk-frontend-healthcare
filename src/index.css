@@ -121,3 +121,16 @@ html {
    backdrop-filter: blur(10px);
    border: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* Animation delay utilities */
+.animation-delay-200 {
+   animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+   animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+   animation-delay: 0.6s;
+}
