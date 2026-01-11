@@ -94,24 +94,28 @@ const Home = () => {
         }
       )
 
-      // Smooth scroll sections
+      // Smooth scroll sections - only animate if elements exist
       const sections = [specialityRef.current, doctorsRef.current, bannerRef.current]
-      sections.forEach((section, i) => {
-        gsap.fromTo(section.querySelectorAll('.animate-card'),
-          { y: 50, opacity: 0, rotateX: 10 },
-          {
-            y: 0,
-            opacity: 1,
-            rotateX: 0,
-            stagger: 0.1,
-            duration: 0.8,
-            ease: "back.out(1.7)",
-            scrollTrigger: {
-              trigger: section,
-              start: "top 70%",
+      sections.forEach((section) => {
+        if (!section) return
+        const cards = section.querySelectorAll('.animate-card')
+        if (cards && cards.length > 0) {
+          gsap.fromTo(cards,
+            { y: 50, opacity: 0, rotateX: 10 },
+            {
+              y: 0,
+              opacity: 1,
+              rotateX: 0,
+              stagger: 0.1,
+              duration: 0.8,
+              ease: "back.out(1.7)",
+              scrollTrigger: {
+                trigger: section,
+                start: "top 70%",
+              }
             }
-          }
-        )
+          )
+        }
       })
 
     }, containerRef)
